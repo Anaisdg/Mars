@@ -50,7 +50,7 @@ def scrape():
     featured_image_url = baseurl + image_url
     # add to mars_data
     mars_data["featured_image_url"] = featured_image_url
-
+    
     # visit website 3
     url3 = 'https://twitter.com/marswxreport?lang=en'
     browser.visit(url3)
@@ -100,7 +100,7 @@ def scrape():
     mars_data["hemisphere_image_urls"] = hemisphere_image_urls
 
     # return mars_data dict
-    print(mars_data["table"])
+    print(mars_data["featured_image_url"])
 
     return mars_data
 
